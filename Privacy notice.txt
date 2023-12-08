@@ -1,6 +1,6 @@
 Privacy notice
 
-Public-nEUro is a data repository service offered by the Neurobiology Research Unit at Rigshopitalet, part of Region Hovedstaden. This privacy policy will explain how our organization uses the personal data we collect from you when you use our servives.
+Public-nEUro is a data repository service offered by the Neurobiology Research Unit at Rigshopitalet, part of Region Hovedstaden. This privacy policy will explain how our organization uses the personal data we collect from you when you use our services.
 
 Topics:
 What data do we collect?
@@ -31,7 +31,7 @@ How will we use your data?
 
 Public-nEUro collects your data so that we can process your order (share your data but also any other service you purchased) or manage your account (give you access to data).
 
-Public-nEUro may send user information related to data acess to the data authors (the data controllers), and also to supervisory authorities for audit purposes.
+Public-nEUro may send user information related to data access to the data authors (the data controllers), and also to supervisory authorities for audit purposes.
 
 How do we store your data?
 
