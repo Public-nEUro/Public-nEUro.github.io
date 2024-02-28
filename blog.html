@@ -90,10 +90,16 @@
     </nav>
   </div>
   <!-- header section end -->
-      <!-- services section start -->
+ <!-- services section start -->
       <div class="services_section layout_padding padding_bottom_0">
         <div class="container">
           <h1 class="blog_text">FAQ</h1>
+          <p><ul><li> 
+            - Legal information (<a href="#compliance">Platform compliance</a>, <a href="#Sharing">Data and GDPR</a>)<br>
+            - Roles and responsabilities (<a href="#Roles">Roles</a>, <a href="#Roles">Responsabilities</a>)<br>
+            - How are are your Data FAIR (<a href="#indexing">Metadata and DOI</a>, <a href="#FAIR">Finding, Searching and Data checks</a>)<br>
+            </li></ul></p> 
+
           <article id="compliance"> 
             <h2>How is Public-nEUro GDPR compliant</h2> 
             <p><h3>Platform compliance: </h3>
@@ -149,6 +155,20 @@
             <h3>Responsibilities</h3>
             <p>The authors are responsible for pseudo-anonymizing their data and providing a Data User Agreement that is GDPR and Nationally lawful. Public-nEUro is responsible for data sharing, ensuring the Data User Agreement, and Standard Contractual Clauses for non-EU-users/countries not offering an adequate level of protection, are signed before giving access, as well as ensuring overall data security.</p>
           </article>
+
+          <article id="indexing"> 
+            <h2>Metadata and DOI</h2>
+            <p>BIDS Dataset are fully indexed with Datalad and metadata are published and openly available via our github repository. The datalad catalog is used to index all the datasets and to searth for them. Work is ongoing to also have data findable via OpenNeuro and EBRAINS</p>
+            <p>Once the data are uploaded and metadata encoded, they will receive a DOI and metadata are published with this new DOI</p>
+          </article>
+
+          <article id="FAIR"> 
+            <h2>Finding, Searching and Data checks</h2>
+            <p>Findability is ensured by using metadata schemas (i.e., small text based file describing the data at a group level, without the presence of personal data), making data findable via other platforms. We are also working on making data available via a Data Catalogue.</p>
+            <p>Accessibility is ensured by the Cloud service that allows downloading datasets for identified users. It is further supported by DataLad, a free and open-source distributed data management system.</p>
+            <p>Interoperability and Reusability are ensured by curating datasets or requesting users to curate their datasets using the Brain Imaging Data Structure. Every Dataset is checked ensuring it is BIDS compliant.</p>
+          </article>
+
         </div>
       </div>
       <!-- services section end -->
