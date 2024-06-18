@@ -166,8 +166,9 @@ a,
 }
 
 img {
-     max-width: 100%;
+     max-width: 60%;
      height: auto;
+     padding-left: 10%;
 }
 
 :focus {
@@ -293,18 +294,16 @@ button {
      float: left;
      position: relative;
      background-image: url(../images/banner-bg.png);
-     height: 500px;
+     height: 400px;
      background-size: 100%;
 }
 
 .banner_img {
-     width: 111%;
+     width: 100%;
      float: left;
      position: relative;
-     left: -72px;
-     z-index: -2;
      background-image: url(../images/img-1.png);
-     height: 500px;
+     height: 400px;
      background-size: 100%;
 }
 
@@ -313,7 +312,6 @@ button {
      float: left;
      font-size: 40px;
      color: #ffffff;
-     padding-top: 90px;
 }
 
 .long_text {
