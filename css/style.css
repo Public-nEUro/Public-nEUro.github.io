@@ -62,9 +62,9 @@ a {
 }
 
 /* unvisited link */
-a:link {color: rgb(90, 90, 255);}
+a:link {color: rgb(91, 175, 253);}
 /* visited link */
-a:visited {color: rgb(58, 183, 0);}
+a:visited {color: rgb(0, 255, 255);}
 /* mouse over link */
 a:hover {color: hotpink;}
 /* selected link */
