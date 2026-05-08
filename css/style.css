@@ -270,8 +270,26 @@ button {
 
 .logo_main {
      position: relative;
-     top: 10px;
+     top: 0;
      z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.header_section .navbar-nav {
+     align-items: center;
+}
+
+.header_section .logo img,
+.header_section .logo_main img {
+     display: block;
+     width: auto;
+     max-width: 100%;
+     height: auto;
+     max-height: clamp(70px, 10vw, 120px);
+     padding-left: 0;
+     object-fit: contain;
 }
 
 .banner_section {
