@@ -8,7 +8,7 @@
   <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- site metas -->
-  <title>PublicnEUro: About</title>
+  <title>PublicnEUro: Policies &amp; standards</title>
   <meta name="keywords" content="brain imaging, data sharing, EU, GDPR">
   <meta name="description" content="Information about the PublicnEUro repository">
   <meta name="author" content="Dr Cyril Pernet">
@@ -42,10 +42,10 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Governance.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="overview.html">Policies &amp; standards</a>
+            <a class="nav-link" href="governance.html">Policies &amp; standards</a>
           </li>
           <li class="nav-item">
             <a class="logo_main"><img src="images/logo.png" title="Brain Art from Jeff Mentch CCBY"></a>
@@ -74,10 +74,10 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Governance.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="overview.html">Policies &amp; standards</a>
+            <a class="nav-link" href="governance.html">Policies &amp; standards</a>
           </li>
           <li class="nav-item">
             <a class="logo_main"><img src="images/logo.png" title="Brain Art from Jeff Mentch CCBY"></a>
@@ -96,62 +96,47 @@
     </nav>
   </div>
   <!-- header section end -->
-  <!-- about section start -->
-  <div class="about_section layout_padding">
-    <div class="container-fluid">
+  <!-- doctor section start -->
+  <div class="doctor_section layout_padding">
+    <div class="container">
       <div class="row">
+        <div class="col-md-6 padding_top0">
+          <h1 class="about_text">Overview</h1>
+          <p class="lorem_text">This overview aims to give a general understanding of how PublicnEUro operates and
+            how it is governed. It remains general to increase readability and to be inclusive for non-specialist
+            readers. The following sections give an overview, while the legal
+              discussion for sharing research personal data can be found in a <a href="FAQ.html">dedicated post</a>.
+          </p>
+          <p class="lorem_text">
+            <a href="https://nru.dk/projects/openneuropet"><b>Open NeuroPET</b></a> refers to a group of people working on a project aiming to make brain positron emission tomography (PET) data more open while following FAIR principles. Those principles are that research data should be Findable, Accessible, Interoperable, and Reusable <a href="https://www.nature.com/articles/sdata201618">(Wilkinson et al. (2016))</a>. The PublicnEUro Data Sharing Policy has been prepared and reviewed by that group.<br><br> 
+            <b>PublicnEUro</b> is the organisation/repository that allows brain imaging data to be shared publicly while following the European General Data Protection Regulation. Sharing publicly means that one or more publicly available records of the data exist, but the data are not open access.<br><br>
+            <b>nEUrothenticate</b> is the informatics platform that allows dataset authors, users, users' institutions, and datasets to be registered, linked, and given access to the data.
+            Data sharing is organised among three parties: people who acquire the data experimentally (the authors, a.k.a. data controllers), people who provide a service that enables public sharing of the data (PublicnEUro, a.k.a. data processor), and people who download the data (the users). The platform operates as an intermediary between the authors and the users (see figure). It provides infrastructure and services for authors that enable FAIR and GDPR-compliant data sharing. For users, it provides access to EU personal data.
+          </p>
+          <div class="read_main">
+                  <div class="read_bt"><a href="FAQ.html#Roles">Roles and Responsibilities</a></div>
+          </div>      </div>
         <div class="col-md-6">
-          <div class="about_taital">
-            <h1 class="about_text">Governance Structure</h1>
-            <p class="lorem_text">
-            <p>
-            <h2>Oversight committee</h2>
-            An oversight committee is composed of members of Open NeuroPET and other international experts in brain
-            imaging and data sharing. The members are: Gitte Knussen, Robert Innis, Melanie Ganz (OpenNeuro PET), Koen Van Laere, and Russ Poldrack. The committee's deliberations operate as follows: two co-chairs are appointed and at least one co-chair must be present; a simple majority is considered a quorum to conduct business, and decision-making is by consensus.
-            <br><br>
-            The role of the oversight committee is to:
-          <ul><li>
-              - officially represent PublicnEUro and disseminate information.<br>
-              - provide guidance and direction on policies and scientific choices (vision and purpose aligned with Open
-              NeuroPET).<br>
-              - review free vs. paying services and discuss the sustainability of the platform.<br>
-              - review activities (summarised by the management committee).<br>
-            </ul></li>
-          </p><p>
-            <h2>Management Committee</h2>
-            The management committee is composed of members of the Neurobiology Research Unit who work directly on Open
-            NeuroPET and/or PublicnEUro.
-            The role of the management committee is to:
-          <ul><li>
-              - ensure that PublicnEUro supports the vision and purpose set by the oversight committee.<br>
-              - define the components of PublicnEUro that subserve the vision and purpose (i.e., set the technical
-              specifications).<br>
-              - review external applications and provide audits.<br>
-              - review dataset usage with regard to storage minimisation and renewal of paid hosting services.<br>
-              - provide summaries of activity to the oversight committee.<br>
-            </ul></li>
-            </p>
+          <div class="image_4">
+            <figure>
+              <img src="images/PublicnEUroSchema.jpg">
+              <figcaption> <i>Schematic overview of the PublicnEUro repository process for sharing data. Data move from the authors' institution (the data controller) to PublicnEUro (data processor), which processes data on its behalf, and then to users. Users who register must be identifiable and must sign the Data User Agreement created by the authors. If users are located outside the EU and in <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">countries not offering an adequate level of data protection</a>, they must also sign Standard Contractual Clauses.</i>
+              </figcaption>
+            </figure>
           </div>
-        </div>
-        <div class="col-md-6">       
-            <div class="image_2" href="#"><img src="images/img-2.png" title="PublicnEUro organisation"></div><br><br>
-            <p>
-               <h2>Data Protection Officer</h2>
-            The platform operates with the help of a DPO whose role is to:
-            <ul><li>
-              - advise and provide reports to the Oversight Committee and the Management Committee, including a DPIA.<br>
-              - work with the Management Committee to identify and assess risks.<br>
-              - regularly review data access rights, including which data are accessed by whom, to ensure good records and prepare
-              for possible audits.<br>
-              - contact authors (the data controller) and be the primary contact point with authorities in case of a
-              security breach.<br>
-            </ul></li>
-            </p>
+          <h4 class="about_text">FAIR data sharing</h4>
+          <p class="lorem_text"><b>Findability</b> is ensured by using metadata schemas (i.e., a small text-based file describing the data at a group level, without the presence of personal data), making data findable via other platforms. <br><br>
+            <b>Accessibility</b> is ensured by the Cloud service that allows downloading datasets for identified users. It is further supported by <a href="https://www.datalad.org/">DataLad</a>, a free and open-source distributed data management system. <br><br>
+            <b>Interoperability and Reusability</b> are ensured by curating datasets or requesting users to curate their datasets using the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure</a>, an international standard to organise and name brain imaging files and add metadata (information about the data).
+          </p>
+          <div class="read_main">
+              <div class="read_bt"><a href="FAQ.html#Sharing">Why you can legally share</a></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- about section end -->
+  <!-- doctor section end -->
   <!-- footer section start -->
   <!-- info section -->
   <div class="info_section layout_padding">
@@ -219,7 +204,7 @@
               <div class="d-flex ">
                 <ul>
                   <li>
-                    <a href="overview.html">
+                    <a href="governance.html">
                       About
                     </a>
                   </li>
