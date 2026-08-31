@@ -448,6 +448,10 @@ button {
      float: right;
 }
 
+.about_taital_full {
+     width: 87.5%;
+}
+
 .lorem_text {
      width: 100%;
      float: left;
