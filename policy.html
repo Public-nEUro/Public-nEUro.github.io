@@ -101,7 +101,7 @@
     <section class="policy_viewer_intro">
       <div class="container">
         <a class="policy_back_link" href="policies.html">&larr; Policies and standards</a>
-        <a class="policy_github_link" id="policy_github_link" href="https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies">See on GitHub</a>
+        <a class="policy_github_link" id="policy_github_link" href="https://github.com/Public-nEUro/Policies-Standards">See on GitHub</a>
       </div>
     </section>
 
@@ -224,38 +224,41 @@
   <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
   <script>
     (function () {
+      var repositoryUrl = 'https://github.com/Public-nEUro/Policies-Standards';
+      var rawBaseUrl = 'https://raw.githubusercontent.com/Public-nEUro/Policies-Standards/main/';
+
       var documents = {
         'governance-responsibilities': {
           title: 'Governance and responsibilities',
-          file: 'policies/governance-responsibilities.md'
+          file: 'governance-responsibilities.md'
         },
         'data-deposit-publication': {
           title: 'Data deposit and publication',
-          file: 'policies/data-deposit-publication.md'
+          file: 'data-deposit-publication.md'
         },
         'data-access-reuse': {
           title: 'Data access and reuse',
-          file: 'policies/data-access-reuse.md'
+          file: 'data-access-reuse.md'
         },
         'preservation-lifecycle': {
           title: 'Preservation and dataset lifecycle',
-          file: 'policies/preservation-lifecycle.md'
+          file: 'preservation-lifecycle.md'
         },
         'privacy-security-incidents': {
           title: 'Privacy, security and incidents',
-          file: 'policies/privacy-security-incidents.md'
+          file: 'privacy-security-incidents.md'
         },
         'user-privacy-notice': {
           title: 'User privacy notice',
-          file: 'policies/user-privacy-notice.md'
+          file: 'user-privacy-notice.md'
         },
         'sustainability-continuity': {
           title: 'Sustainability and continuity',
-          file: 'policies/sustainability-continuity.md'
+          file: 'sustainability-continuity.md'
         },
         'metadata-technical-standards': {
           title: 'Metadata and technical standards',
-          file: 'policies/metadata-technical-standards.md'
+          file: 'metadata-technical-standards.md'
         }
       };
 
@@ -268,14 +271,14 @@
       if (!doc) {
         document.title = 'PublicnEUro: Policy not found';
         documentElement.innerHTML = '<h1>Policy document not found</h1><p>The requested policy document could not be found.</p>';
-        githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies';
+        githubElement.href = repositoryUrl;
         return;
       }
 
       document.title = 'PublicnEUro: ' + doc.title;
-      githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/blob/main/' + doc.file;
+      githubElement.href = repositoryUrl + '/blob/main/' + doc.file;
 
-      fetch(doc.file)
+      fetch(rawBaseUrl + doc.file)
         .then(function (response) {
           if (!response.ok) {
             throw new Error('Document request failed');
@@ -287,8 +290,8 @@
           documentElement.innerHTML = DOMPurify.sanitize(html);
           documentElement.querySelectorAll('a[href]').forEach(function (link) {
             var href = link.getAttribute('href');
-            if (/^policies\/[a-z0-9-]+\.md$/.test(href)) {
-              link.setAttribute('href', 'policy.html?doc=' + href.replace('policies/', '').replace('.md', ''));
+            if (/^[a-z0-9-]+\.md$/.test(href)) {
+              link.setAttribute('href', 'policy.html?doc=' + href.replace('.md', ''));
             }
           });
         })
