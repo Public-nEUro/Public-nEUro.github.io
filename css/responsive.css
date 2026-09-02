@@ -306,6 +306,12 @@ padding: 126px 40px;
 .contact_section { padding-top: 30px; }
 .mobile_header { display: flex; }
 
+.about_intro { padding: 50px 0 35px; }
+.about_intro h2 { font-size: 30px; }
+.about_content_section { padding: 45px 0; }
+.about_content_section h2 { font-size: 25px; }
+.provides_grid { grid-template-columns: 1fr; }
+
 
 } 
 
@@ -417,6 +423,13 @@ ul.link li {
 .info_section .form_container button { margin-top: 20px; }
 .logo { width: 35%; float: left; }
 .mobile_header { display: flex; }
+
+.about_intro { padding: 42px 0 28px; }
+.about_intro h2 { font-size: 28px; }
+.about_content_section { padding: 38px 0; }
+.about_content_section h2 { font-size: 24px; }
+.provides_grid { grid-template-columns: 1fr; gap: 18px; }
+.provides_panel { padding: 22px; }
 
 
 

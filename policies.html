@@ -8,7 +8,7 @@
   <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- site metas -->
-  <title>PublicnEUro: About</title>
+  <title>PublicnEUro: Policies &amp; standards</title>
   <meta name="keywords" content="brain imaging, data sharing, EU, GDPR">
   <meta name="description" content="Information about the PublicnEUro repository">
   <meta name="author" content="Dr Cyril Pernet">
@@ -96,66 +96,47 @@
     </nav>
   </div>
   <!-- header section end -->
-  <!-- about section start -->
-  <main class="about_page">
-    <section class="about_intro">
-      <div class="container">
-        <div class="about_intro_text">
-          <h2>About PublicnEUro</h2>
-          <p>PublicnEUro is a repository for human brain-imaging research data, including MRI, PET, EEG, MEG and related data. It is operated by the Neurobiology Research Unit at Rigshospitalet, Region Hovedstaden, Denmark.</p>
-          <p>PublicnEUro supports both open and controlled access. Every published dataset receives a persistent identifier and a public catalogue record. Metadata remain openly available so that datasets can be discovered, evaluated and cited even when participant-level data require controlled access.</p>
-          <p>For controlled datasets, users are identified and must accept the dataset-specific Data User Agreement. Additional safeguards may apply to international transfers. This allows research data to be shared as openly as possible while protecting participants and respecting the requirements of the responsible data controller.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about_content_section">
-      <div class="container">
-        <h2>What PublicnEUro provides</h2>
-        <div class="provides_grid">
-          <div class="provides_panel">
-            <h3>For data depositors</h3>
-            <ul>
-              <li>BIDS validation and optional curation;</li>
-              <li>public dataset metadata and a DOI for each published version;</li>
-              <li>open or controlled-access distribution;</li>
-              <li>management and recording of access requests;</li>
-              <li>machine-readable Digital Use Conditions derived from the authoritative licence or Data User Agreement;</li>
-              <li>online storage, archival storage or persistent metadata-only publication.</li>
-            </ul>
+  <!-- doctor section start -->
+  <div class="doctor_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 padding_top0">
+          <h1 class="about_text">Overview</h1>
+          <p class="lorem_text">This overview aims to give a general understanding of how PublicnEUro operates and
+            how it is governed. It remains general to increase readability and to be inclusive for non-specialist
+            readers. The following sections give an overview, while the legal
+              discussion for sharing research personal data can be found in a <a href="FAQ.html">dedicated post</a>.
+          </p>
+          <p class="lorem_text">
+            <a href="https://nru.dk/projects/openneuropet"><b>Open NeuroPET</b></a> refers to a group of people working on a project aiming to make brain positron emission tomography (PET) data more open while following FAIR principles. Those principles are that research data should be Findable, Accessible, Interoperable, and Reusable <a href="https://www.nature.com/articles/sdata201618">(Wilkinson et al. (2016))</a>. The PublicnEUro Data Sharing Policy has been prepared and reviewed by that group.<br><br> 
+            <b>PublicnEUro</b> is the organisation/repository that allows brain imaging data to be shared publicly while following the European General Data Protection Regulation. Sharing publicly means that one or more publicly available records of the data exist, but the data are not open access.<br><br>
+            <b>nEUrothenticate</b> is the informatics platform that allows dataset authors, users, users' institutions, and datasets to be registered, linked, and given access to the data.
+            Data sharing is organised among three parties: people who acquire the data experimentally (the authors, a.k.a. data controllers), people who provide a service that enables public sharing of the data (PublicnEUro, a.k.a. data processor), and people who download the data (the users). The platform operates as an intermediary between the authors and the users (see figure). It provides infrastructure and services for authors that enable FAIR and GDPR-compliant data sharing. For users, it provides access to EU personal data.
+          </p>
+          <div class="read_main">
+                  <div class="read_bt"><a href="FAQ.html#Roles">Roles and Responsibilities</a></div>
+          </div>      </div>
+        <div class="col-md-6">
+          <div class="image_4">
+            <figure>
+              <img src="images/PublicnEUroSchema.jpg">
+              <figcaption> <i>Schematic overview of the PublicnEUro repository process for sharing data. Data move from the authors' institution (the data controller) to PublicnEUro (data processor), which processes data on its behalf, and then to users. Users who register must be identifiable and must sign the Data User Agreement created by the authors. If users are located outside the EU and in <a href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en">countries not offering an adequate level of data protection</a>, they must also sign Standard Contractual Clauses.</i>
+              </figcaption>
+            </figure>
           </div>
-          <div class="provides_panel">
-            <h3>For data users</h3>
-            <ul>
-              <li>a searchable public catalogue;</li>
-              <li>clear access and reuse conditions before requesting data;</li>
-              <li>browser and command-line retrieval;</li>
-              <li>persistent citation information;</li>
-              <li>dataset status and retrieval information.</li>
-            </ul>
+          <h4 class="about_text">FAIR data sharing</h4>
+          <p class="lorem_text"><b>Findability</b> is ensured by using metadata schemas (i.e., a small text-based file describing the data at a group level, without the presence of personal data), making data findable via other platforms. <br><br>
+            <b>Accessibility</b> is ensured by the Cloud service that allows downloading datasets for identified users. It is further supported by <a href="https://www.datalad.org/">DataLad</a>, a free and open-source distributed data management system. <br><br>
+            <b>Interoperability and Reusability</b> are ensured by curating datasets or requesting users to curate their datasets using the <a href="https://bids.neuroimaging.io/">Brain Imaging Data Structure</a>, an international standard to organise and name brain imaging files and add metadata (information about the data).
+          </p>
+          <div class="read_main">
+              <div class="read_bt"><a href="FAQ.html#Sharing">Why you can legally share</a></div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="about_content_section about_content_section_alt">
-      <div class="container">
-        <h2>Roles and responsibilities</h2>
-        <p>For terms definitions see <a href="https://publicneuro.eu/FAQ.html#Roles">FAQ</a>.</p>
-        <p>The institution responsible for a dataset remains its data controller and determines the permitted uses of the data. PublicnEUro normally processes and distributes the dataset according to the controller's documented instructions. Registered users and their institutions are responsible for complying with the applicable licence, Data User Agreement and data-protection requirements.</p>
-        <p>PublicnEUro also acts as data controller for the personal information needed to operate user accounts and provide repository services.</p>
-        <p>The authors are responsible for pseudonymising their data and providing a Data User Agreement that is GDPR- and nationally lawful. PublicnEUro is responsible for data sharing, ensuring that the Data User Agreement and Standard Contractual Clauses for non-EU users/countries without an adequate level of protection are signed before giving access, as well as ensuring overall data security.</p>
-      </div>
-    </section>
-
-    <section class="about_content_section">
-      <div class="container">
-        <h2>Governance</h2>
-        <p>PublicnEUro is governed through an Oversight Committee, a Management Committee and data-protection oversight. These bodies provide strategic direction, manage repository operations, assess risks and review the sustainability of the service. <a href="governance.html">More on governance structure here</a>.</p>
-      </div>
-    </section>
-  </main>
-  <!-- about section end -->
+    </div>
+  </div>
+  <!-- doctor section end -->
   <!-- footer section start -->
   <!-- info section -->
   <div class="info_section layout_padding">
