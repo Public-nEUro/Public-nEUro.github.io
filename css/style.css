@@ -725,12 +725,16 @@ button {
 
 .policy_document h1 {
      font-size: 34px;
-     margin-bottom: 22px;
+     margin: 0 0 24px;
 }
 
 .policy_document h2 {
      font-size: 26px;
-     margin: 34px 0 14px;
+     margin: 48px 0 16px;
+}
+
+.policy_document h1 + h2 {
+     margin-top: 28px;
 }
 
 .policy_document h3 {
