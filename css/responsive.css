@@ -321,6 +321,10 @@ padding: 126px 40px;
 .policy_document_section { padding: 38px 0 55px; }
 .policy_document h1 { font-size: 28px; }
 .policy_document h2 { font-size: 24px; }
+.faq_intro { padding: 45px 0 32px; }
+.faq_intro h1 { font-size: 30px; }
+.faq_list { padding: 38px 0 55px; }
+.faq_item h2 { font-size: 23px; }
 
 
 } 
@@ -452,6 +456,11 @@ ul.link li {
 .policy_document h1 { font-size: 26px; }
 .policy_document h2 { font-size: 23px; }
 .policy_document h3 { font-size: 20px; }
+.faq_intro { padding: 38px 0 28px; }
+.faq_intro h1 { font-size: 27px; }
+.faq_list { padding: 32px 0 45px; }
+.faq_item { padding: 24px 0; }
+.faq_item h2 { font-size: 22px; }
 
 
 
