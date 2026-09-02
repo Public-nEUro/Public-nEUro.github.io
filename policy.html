@@ -101,7 +101,6 @@
     <section class="policy_viewer_intro">
       <div class="container">
         <a class="policy_back_link" href="policies.html">&larr; Policies and standards</a>
-        <h1 id="policy_title">Policy document</h1>
         <a class="policy_github_link" id="policy_github_link" href="https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies">See on GitHub</a>
       </div>
     </section>
@@ -263,19 +262,16 @@
       var params = new URLSearchParams(window.location.search);
       var docId = params.get('doc') || '';
       var doc = documents[docId];
-      var titleElement = document.getElementById('policy_title');
       var documentElement = document.getElementById('policy_document');
       var githubElement = document.getElementById('policy_github_link');
 
       if (!doc) {
-        titleElement.textContent = 'Policy document not found';
         document.title = 'PublicnEUro: Policy not found';
-        documentElement.innerHTML = '<p>The requested policy document could not be found.</p>';
+        documentElement.innerHTML = '<h1>Policy document not found</h1><p>The requested policy document could not be found.</p>';
         githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies';
         return;
       }
 
-      titleElement.textContent = doc.title;
       document.title = 'PublicnEUro: ' + doc.title;
       githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/blob/main/' + doc.file;
 
