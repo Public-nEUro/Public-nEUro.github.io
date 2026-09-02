@@ -8,9 +8,9 @@
   <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- site metas -->
-  <title>PublicnEUro: Policies &amp; standards</title>
+  <title>PublicnEUro: Policy</title>
   <meta name="keywords" content="brain imaging, data sharing, EU, GDPR">
-  <meta name="description" content="Information about the PublicnEUro repository">
+  <meta name="description" content="PublicnEUro policy document">
   <meta name="author" content="Dr Cyril Pernet">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -52,7 +52,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="catalogue.html">Browse datasets</a>
-          </li>          
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="download.html">Access data</a>
           </li>
@@ -84,7 +84,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="catalogue.html">Browse datasets</a>
-          </li>          
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="download.html">Access data</a>
           </li>
@@ -96,90 +96,25 @@
     </nav>
   </div>
   <!-- header section end -->
-  <!-- policies section start -->
-  <main class="policies_page">
-    <section class="policies_intro">
+
+  <main class="policy_viewer_page">
+    <section class="policy_viewer_intro">
       <div class="container">
-        <h1>Policies and standards</h1>
-        <p>PublicnEUro's policies describe what the repository, data controllers, depositors and users commit to doing. Its standards describe how datasets and their governance information are represented, validated, exchanged and preserved.</p>
-        <p>The summaries below are provided for orientation. The complete policy pages, signed service agreements and dataset-specific licences or Data User Agreements remain authoritative.</p>
+        <a class="policy_back_link" href="policies.html">&larr; Policies and standards</a>
+        <h1 id="policy_title">Policy document</h1>
+        <a class="policy_github_link" id="policy_github_link" href="https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies">See on GitHub</a>
       </div>
     </section>
 
-    <section class="policies_list">
+    <section class="policy_document_section">
       <div class="container">
-        <article class="policy_summary">
-          <h2>Governance and responsibilities</h2>
-          <p>Explains who operates PublicnEUro, how decisions are made, and the responsibilities of the Oversight Committee, Management Committee, Data Protection Officer, data controllers, depositors and users.</p>
-          <p><a class="policy_link" href="policy.html?doc=governance-responsibilities">Read more about governance and responsibilities &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Data deposit and publication</h2>
-          <p>Describes eligible data, depositor responsibilities, required metadata, BIDS validation, DOI assignment, version publication, curation and acceptance criteria.</p>
-          <p><a class="policy_link" href="policy.html?doc=data-deposit-publication">Read the data deposit and publication policy &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Data access and reuse</h2>
-          <p>Explains open and controlled access, registration, institutional identification, Data User Agreements, international transfers, access approval, audit records and dataset-specific conditions.</p>
-          <p><a class="policy_link" href="policy.html?doc=data-access-reuse">Read the data access and reuse policy &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Preservation and dataset lifecycle</h2>
-          <p>Explains retention, storage, integrity checking and the five published lifecycle states:</p>
-          <ul>
-            <li><code>active</code>: normally available from PublicnEUro;</li>
-            <li><code>archived</code>: retained in cold storage and subject to retrieval delay;</li>
-            <li><code>retired</code>: files are no longer held by PublicnEUro, but metadata and a controller contact remain;</li>
-            <li><code>withdrawn</code>: data access has ceased;</li>
-            <li><code>superseded</code>: a newer version or replacement should normally be used.</li>
-          </ul>
-          <p>Dataset metadata and DOI landing pages are maintained independently of the availability of the files. Withdrawn records retain an appropriate public record where legally possible. This follows DataCite's expectation that DOI landing pages remain public even when content is restricted and that removed resources receive tombstone pages. <a href="https://support.datacite.org/docs/best-practices-for-datacite-members?utm_source=chatgpt.com">DataCite landing-page guidance</a>, <a href="https://support.datacite.org/docs/tombstone-pages?utm_source=chatgpt.com">tombstone guidance</a></p>
-          <p><a class="policy_link" href="policy.html?doc=preservation-lifecycle">Read the preservation and lifecycle policy &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Privacy, security and incidents</h2>
-          <p>Summarises identity and access management, encryption, access logging, risk management, incident response and the handling of repository-user personal information.</p>
-          <p><a class="policy_link" href="policy.html?doc=privacy-security-incidents">Read the privacy and security policy &rarr;</a></p>
-          <p><a class="policy_link" href="policy.html?doc=user-privacy-notice">Read the user privacy notice &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Sustainability and continuity</h2>
-          <p>Explains the repository's institutional basis, cost-recovery model, service review, succession arrangements and what happens to metadata, identifiers and preserved data if the service changes or closes.</p>
-          <p><a class="policy_link" href="policy.html?doc=sustainability-continuity">Read the sustainability and continuity policy &rarr;</a></p>
-        </article>
-
-        <article class="policy_summary">
-          <h2>Metadata and technical standards</h2>
-          <p>PublicnEUro currently uses or produces:</p>
-          <ul>
-            <li><strong>BIDS</strong> for neuroimaging organisation and metadata;</li>
-            <li><strong>BIDS Validator</strong> for technical validation;</li>
-            <li><strong>DataLad</strong> for versioned data management;</li>
-            <li><strong>DataCite DOIs</strong> for persistent identification;</li>
-            <li><strong>NeuroBagel</strong> annotations for federated participant-level discovery;</li>
-            <li><strong>Digital Use Conditions</strong> for structured summaries of licences and DUAs;</li>
-            <li><strong>JSON Schema</strong> for dataset-level governance records;</li>
-            <li><strong>OpenAIRE CERIF XML</strong> for repository-wide exchange;</li>
-            <li><strong>re3data XML</strong> for repository description.</li>
-          </ul>
-          <p>Each dataset record separates:</p>
-          <ul>
-            <li>repository lifecycle status;</li>
-            <li>retrieval mode;</li>
-            <li>authoritative licence or Data User Agreement;</li>
-            <li>machine-readable Digital Use Conditions.</li>
-          </ul>
-          <p><a class="policy_link" href="policy.html?doc=metadata-technical-standards">Read the metadata and technical standards &rarr;</a></p>
+        <article class="policy_document" id="policy_document">
+          <p>Loading policy document.</p>
         </article>
       </div>
     </section>
   </main>
-  <!-- policies section end -->
+
   <!-- footer section start -->
   <!-- info section -->
   <div class="info_section layout_padding">
@@ -286,6 +221,86 @@
   <!-- sidebar -->
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <script>
+    (function () {
+      var documents = {
+        'governance-responsibilities': {
+          title: 'Governance and responsibilities',
+          file: 'policies/governance-responsibilities.md'
+        },
+        'data-deposit-publication': {
+          title: 'Data deposit and publication',
+          file: 'policies/data-deposit-publication.md'
+        },
+        'data-access-reuse': {
+          title: 'Data access and reuse',
+          file: 'policies/data-access-reuse.md'
+        },
+        'preservation-lifecycle': {
+          title: 'Preservation and dataset lifecycle',
+          file: 'policies/preservation-lifecycle.md'
+        },
+        'privacy-security-incidents': {
+          title: 'Privacy, security and incidents',
+          file: 'policies/privacy-security-incidents.md'
+        },
+        'user-privacy-notice': {
+          title: 'User privacy notice',
+          file: 'policies/user-privacy-notice.md'
+        },
+        'sustainability-continuity': {
+          title: 'Sustainability and continuity',
+          file: 'policies/sustainability-continuity.md'
+        },
+        'metadata-technical-standards': {
+          title: 'Metadata and technical standards',
+          file: 'policies/metadata-technical-standards.md'
+        }
+      };
+
+      var params = new URLSearchParams(window.location.search);
+      var docId = params.get('doc') || '';
+      var doc = documents[docId];
+      var titleElement = document.getElementById('policy_title');
+      var documentElement = document.getElementById('policy_document');
+      var githubElement = document.getElementById('policy_github_link');
+
+      if (!doc) {
+        titleElement.textContent = 'Policy document not found';
+        document.title = 'PublicnEUro: Policy not found';
+        documentElement.innerHTML = '<p>The requested policy document could not be found.</p>';
+        githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/tree/main/policies';
+        return;
+      }
+
+      titleElement.textContent = doc.title;
+      document.title = 'PublicnEUro: ' + doc.title;
+      githubElement.href = 'https://github.com/Public-nEUro/Public-nEUro.github.io/blob/main/' + doc.file;
+
+      fetch(doc.file)
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Document request failed');
+          }
+          return response.text();
+        })
+        .then(function (markdown) {
+          var html = marked.parse(markdown);
+          documentElement.innerHTML = DOMPurify.sanitize(html);
+          documentElement.querySelectorAll('a[href]').forEach(function (link) {
+            var href = link.getAttribute('href');
+            if (/^policies\/[a-z0-9-]+\.md$/.test(href)) {
+              link.setAttribute('href', 'policy.html?doc=' + href.replace('policies/', '').replace('.md', ''));
+            }
+          });
+        })
+        .catch(function () {
+          documentElement.innerHTML = '<p>This policy document could not be loaded. You can still open it directly on GitHub.</p>';
+        });
+    }());
+  </script>
   <!-- javascript -->
   <script src="js/owl.carousel.js"></script>
   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>

@@ -311,6 +311,17 @@ padding: 126px 40px;
 .about_content_section { padding: 45px 0; }
 .about_content_section h2 { font-size: 25px; }
 .provides_grid { grid-template-columns: 1fr; }
+.governance_about { grid-template-columns: 1fr; }
+.governance_about img { justify-self: start; }
+.policies_intro { padding: 50px 0 35px; }
+.policies_intro h1 { font-size: 30px; }
+.policies_list { padding: 35px 0 50px; }
+.policy_summary h2 { font-size: 24px; }
+.policy_viewer_intro { padding: 45px 0 32px; }
+.policy_viewer_intro h1 { font-size: 30px; }
+.policy_document_section { padding: 38px 0 55px; }
+.policy_document h1 { font-size: 28px; }
+.policy_document h2 { font-size: 24px; }
 
 
 } 
@@ -430,6 +441,19 @@ ul.link li {
 .about_content_section h2 { font-size: 24px; }
 .provides_grid { grid-template-columns: 1fr; gap: 18px; }
 .provides_panel { padding: 22px; }
+.governance_about { grid-template-columns: 1fr; gap: 20px; }
+.governance_about img { justify-self: start; }
+.policies_intro { padding: 42px 0 28px; }
+.policies_intro h1 { font-size: 28px; }
+.policies_list { padding: 28px 0 42px; }
+.policy_summary { padding: 26px 0; }
+.policy_summary h2 { font-size: 23px; }
+.policy_viewer_intro { padding: 38px 0 28px; }
+.policy_viewer_intro h1 { font-size: 27px; }
+.policy_document_section { padding: 32px 0 45px; }
+.policy_document h1 { font-size: 26px; }
+.policy_document h2 { font-size: 23px; }
+.policy_document h3 { font-size: 20px; }
 
 
 
