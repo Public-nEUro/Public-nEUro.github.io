@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive-->
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/homepage.css">
   <!-- fevicon -->
   <link rel="icon" href="images/fevicon.png" type="image/gif" />
   <!-- Scrollbar Custom CSS -->
@@ -31,7 +32,7 @@
     media="screen">
 </head>
 
-<body>
+<body class="landing-option option-1">
 <!-- header section start -->
   <div class="header_section">
     <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light" style="display: flex; justify-content: center;">
@@ -96,54 +97,26 @@
     </nav>
   </div>
   <!-- header section end -->
-      <!-- banner section start -->
-      <div class="banner_section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 padding_0">
-              <div id="main_slider" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="banner_bg">
-                      <div class="banner_taital_main">
-                        <h1 class="banner_taital">Brain imaging data<br>
-                         from EU institutions and beyond</h1>
-                        <p class="long_text">Discover and share BIDS-organised human neuroimaging data, with open metadata and proportionate access controls where required.</p>
-                        <div class="btn_main">
-                          <div class="about_us"><a href="upload.html">Deposit data</a></div>
-                          <div class="about_us"><a href="catalogue.html">Browse datasets</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="banner_bg">
-                      <div class="banner_taital_main">
-                        <h1 class="banner_taital">Public and Secure<br>
-                        Your data, your way</h1>  
-                        <p class="long_text">As a data author, share your data using your own data-use agreement, following your national and institutional rules.</p>
-                        <div class="btn_main">
-                        <div class="about_us"><a href="FAQ.html">How controlled access works</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i></a>
-                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6 padding_0">
-              <div class="banner_img"></div>
-
-            </div>
+      <!-- static homepage hero -->
+      <section class="lp-hero lp-hero-split" aria-labelledby="homepage-title">
+        <div class="lp-hero-copy">
+          <p class="lp-eyebrow">Public metadata · proportionate access</p>
+          <h1 id="homepage-title">Share and discover brain imaging data</h1>
+          <p class="lp-lead">PublicnEUro makes BIDS-organised MRI, PET, EEG and MEG datasets findable and citable, while supporting open or controlled access according to each dataset's requirements.</p>
+          <div class="lp-actions">
+            <a class="lp-button lp-button--primary" href="catalogue.html">Browse datasets</a>
+            <a class="lp-button lp-button--secondary" href="upload.html">Deposit data</a>
           </div>
+          <p class="lp-support-links"><a href="FAQ.html#compliance">How controlled access works</a><span aria-hidden="true">·</span><a href="FAQ.html">Read the FAQ</a></p>
+          <ul class="lp-trust-line" aria-label="Repository features">
+            <li>Open metadata</li>
+            <li>Dataset DOIs</li>
+            <li>BIDS-oriented curation</li>
+          </ul>
         </div>
-      </div>
-      <!-- banner section end -->
+        <div class="lp-hero-media" role="img" aria-label="Brain cortex visual used by PublicnEUro"></div>
+      </section>
+      <!-- end static homepage hero -->
       <!-- about section start -->
       <div class="about_section layout_padding pb-0">
         <div class="container-fluid">
