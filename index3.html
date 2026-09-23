@@ -561,6 +561,42 @@
   }
 }
 
+
+
+/* Keep the substantive content of option 3 in one reading column. */
+.option-3 .about_section .row,
+.option-3 .care_section .row,
+.option-3 .container-fluid.py-1 .row {
+  display: block;
+}
+
+.option-3 .about_section .row > [class*="col-md-"],
+.option-3 .care_section .row > [class*="col-md-"],
+.option-3 .container-fluid.py-1 .row > [class*="col-md-"] {
+  width: min(820px, calc(100% - 32px));
+  max-width: 820px;
+  margin-right: auto;
+  margin-left: auto;
+  flex: none;
+}
+
+.option-3 .about_taital,
+.option-3 .about_taital_full,
+.option-3 .care_taital {
+  width: 100%;
+  float: none;
+}
+
+.option-3 .image_2,
+.option-3 .image_3 {
+  float: none;
+  text-align: center;
+}
+
+.option-3 .container-fluid.py-1 .offset-md-6 {
+  margin-left: auto;
+}
+
   </style>
   <!-- fevicon -->
   <link rel="icon" href="images/fevicon.png" type="image/gif" />
