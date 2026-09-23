@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PublicnEUro homepage design options</title>
+  <link rel="icon" href="images/fevicon.png" type="image/gif">
+  <style>
+    :root { --ink:#25262b; --muted:#59636b; --green:#09d066; --mist:#f2f7f5; --line:#d7e3dd; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--mist); font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1040px,calc(100% - 32px)); margin:0 auto; padding:64px 0; }
+    h1 { max-width:760px; margin:0; font-size:clamp(2.2rem,5vw,4rem); line-height:1.05; letter-spacing:-.04em; }
+    .intro { max-width:760px; margin:22px 0 42px; color:var(--muted); font-size:1.08rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+    article { display:flex; flex-direction:column; padding:28px; border-top:5px solid var(--green); background:white; box-shadow:0 12px 32px rgba(37,38,43,.08); }
+    h2 { margin:0; font-size:1.35rem; }
+    article p { flex:1; color:var(--muted); }
+    .tag { width:max-content; margin-bottom:18px; padding:4px 9px; border-radius:999px; background:#dff9ea; color:#14613a; font-size:.75rem; font-weight:700; text-transform:uppercase; }
+    a { display:inline-flex; justify-content:center; padding:12px 16px; background:var(--ink); color:white; font-weight:700; text-decoration:none; }
+    a:hover { background:#087a42; }
+    aside { margin-top:36px; padding:22px 26px; border-left:5px solid var(--green); background:white; }
+    aside strong { display:block; margin-bottom:6px; }
+    @media(max-width:800px){ .grid{grid-template-columns:1fr;} main{padding-top:42px;} }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PublicnEUro homepage options</h1>
+    <p class="intro">Three static, responsive alternatives to the current split carousel. All preserve the existing navigation, repository information, live metrics, policies, funding and footer.</p>
+    <div class="grid">
+      <article>
+        <span class="tag">Lowest-risk change</span>
+        <h2>1. Restrained split hero</h2>
+        <p>Text and actions remain beside the brain visual on desktop and stack naturally on mobile. Familiar, compact and closest to the current identity.</p>
+        <a href="index1.html">Open option 1</a>
+      </article>
+      <article>
+        <span class="tag">Strongest visual</span>
+        <h2>2. Image-led hero</h2>
+        <p>The brain visual becomes a full-width background. Three audience paths clarify discovery, access and deposition immediately below it.</p>
+        <a href="index2.html">Open option 2</a>
+      </article>
+      <article>
+        <span class="tag">Recommended</span>
+        <h2>3. Task-first service</h2>
+        <p>The value proposition leads, followed by explicit user tasks. It is the clearest structure for researchers arriving with a specific goal.</p>
+        <a href="index3.html">Open option 3</a>
+      </article>
+    </div>
+    <aside>
+      <strong>What changed across all three</strong>
+      The carousel is removed; “How controlled access works” and the FAQ remain visible; “Browse datasets” is treated as the primary action; and the layout reflows to one column on narrow screens without hiding content.
+    </aside>
+  </main>
+</body>
+</html>
