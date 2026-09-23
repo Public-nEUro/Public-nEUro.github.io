@@ -455,3 +455,87 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Option 3 refinement: genuinely single-column, linear reading order */
+.option-3 .lp-hero-single {
+  padding: 72px 0 0;
+  background: var(--pn-white);
+}
+
+.option-3 .lp-single-copy {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.option-3 .lp-single-copy .lp-lead {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.option-3 .lp-single-copy .lp-actions,
+.option-3 .lp-single-copy .lp-trust-line {
+  justify-content: center;
+}
+
+.option-3 .lp-single-visual {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 440px;
+  margin: 54px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, transparent 40%, rgba(30, 33, 36, 0.84) 100%),
+    url("../images/banner-bg.png") center / cover no-repeat;
+  box-shadow: var(--pn-shadow);
+}
+
+.option-3 .lp-single-visual .lp-visual-note {
+  width: min(760px, calc(100% - 56px));
+  right: auto;
+  left: 28px;
+  text-align: left;
+}
+
+.option-3 .lp-single-paths {
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.option-3 .lp-single-paths .lp-section-heading {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.option-3 .lp-single-paths .lp-path-grid {
+  grid-template-columns: 1fr;
+}
+
+.option-3 .lp-single-paths .lp-path-card {
+  min-height: 0;
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .option-3 .lp-hero-single {
+    padding-top: 52px;
+  }
+
+  .option-3 .lp-single-copy {
+    text-align: left;
+  }
+
+  .option-3 .lp-single-copy .lp-actions,
+  .option-3 .lp-single-copy .lp-trust-line {
+    justify-content: flex-start;
+  }
+
+  .option-3 .lp-single-visual {
+    width: calc(100% - 32px);
+    min-height: 280px;
+    margin-top: 38px;
+  }
+}
